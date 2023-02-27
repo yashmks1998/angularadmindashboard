@@ -1,0 +1,40 @@
+<main id="main" class="main">
+    <div class="pagetitle">
+        <h1>Add Menu</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+                <li class="breadcrumb-item active">Menu</li>
+            </ol>
+        </nav>
+    </div>
+    <section class="section dashboard">
+       
+          <form>
+            <!-- <div class="form-group">
+              <label for="menuName">Menu Name</label>
+              <input type="text" class="form-control" id="menuName" placeholder="Enter menu name" [(ngModel)]="menuName">
+            </div>
+            <div class="form-group">
+              <label for="menuDescription">Menu Description</label>
+              <textarea class="form-control" id="menuDescription" placeholder="Enter menu description" [(ngModel)]="menuDescription"></textarea>
+            </div>
+            <div class="form-group" *ngFor="let item of menuItems; let i=index">
+              <label for="itemName{{i}}">Item Name</label>
+              <input type="text" class="form-control" id="itemName{{i}}" placeholder="Enter item name" [(ngModel)]="item.name">
+              <label for="itemPrice{{i}}">Item Price</label>
+              <input type="number" class="form-control" id="itemPrice{{i}}" placeholder="Enter item price" [(ngModel)]="item.price">
+              <label for="itemDescription{{i}}">Item Description</label>
+              <textarea class="form-control" id="itemDescription{{i}}" placeholder="Enter item description" [(ngModel)]="item.description"></textarea>
+              <button type="button" class="btn btn-danger" (click)="removeMenuItem(i)">Remove</button>
+            </div> -->
+            <div class="row">
+              <div class="col">
+            <button type="button" class="btn btn-primary" routerLink="/register-menu">Add Item</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-primary" routerLink="/view-menu">Menu List</button>
+          </div>
+        </div>
+          </form>
+    </section>

@@ -1,0 +1,27 @@
+{
+    "restaurant_name": "Delicious Delights",
+    "menu_items": [
+      {
+        "name": "Hamburger",
+        "description": "A juicy beef patty served on a toasted bun with lettuce, tomato, and onion.",
+        "price": 8.99,
+        "image_url": "https://example.com/images/hamburger.jpg",
+        "ingredients": ["beef patty", "lettuce", "tomato", "onion", "bun"]
+      },
+      {
+        "name": "Caesar Salad",
+        "description": "Crisp romaine lettuce, shaved parmesan cheese, and croutons tossed in a classic Caesar dressing.",
+        "price": 6.99,
+        "image_url": "https://example.com/images/caesar_salad.jpg",
+        "ingredients": ["romaine lettuce", "parmesan cheese", "croutons", "Caesar dressing"]
+      },
+      {
+        "name": "Margherita Pizza",
+        "description": "A classic pizza topped with fresh mozzarella, tomato sauce, and basil.",
+        "price": 12.99,
+        "image_url": "https://example.com/images/margherita_pizza.jpg",
+        "ingredients": ["fresh mozzarella", "tomato sauce", "basil"]
+      }
+    ]
+  }
+  

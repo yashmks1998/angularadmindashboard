@@ -1,0 +1,79 @@
+<main id="main" class="main">
+    <div class="pagetitle">
+        <h1>Add Menu</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+                <li class="breadcrumb-item active">Menu</li>
+            </ol>
+        </nav>
+    </div>
+    <section class="section dashboard">
+       
+        <div
+        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
+      >
+        <h2 class="h2">Menu List</h2>
+        <a
+          routerLink="/register-menu"
+          class="btn btn-success"
+          *ngIf="hideWhenNomenu"
+        >
+          Add Menu
+        </a>
+      </div>
+      <div class="pricing-header mx-auto">
+        <div class="no-data text-center" *ngIf="preLoader">
+          <!-- <img src="assets/preloader.gif" class="preloader-icon" alt="No menu" /> -->
+        </div>
+        <div class="no-data text-center" *ngIf="noData">
+          <!-- <img src="assets/no-menu.svg" class="nodata-msg" alt="No menu" /> -->
+          <p class="nodata-msg">No Menu added yet!</p>
+          <a routerLink="/register-menu" class="btn btn-success"> Add Menu </a>
+        </div>
+        <div class="table-responsive" *ngIf="hideWhenNomenu">
+          <table
+            class="table table-bordered table-responsive-sm table-responsive-md table-responsive-lg"
+          >
+            <thead>
+              <tr>
+                <th scope="col">id </th>
+                <th scope="col">menu </th>
+                <th scope="col">menu Desc</th>
+                <th scope="col">subMenu</th>
+                <th scope="col">subMenuDesc</th>
+                <th class="text-center" scope="col">Edit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                *ngFor="
+                  let menu of menu
+                    | paginate: { itemsPerPage: 8, currentPage: p };
+                  let i = index
+                "
+              >
+                <th scope="row">{{ menu.$key }}</th>
+                <td>{{ menu.menuItem }} </td>
+                <td>{{ menu.menuDesc }}</td>
+                <td>{{ menu.subMenu }}</td>
+                <td>{{ menu.subMenuDesc }}</td>
+                <td class="text-center action-block">
+                  <span
+                    class="mr-2 btn btn-outline-primary btn-sm"
+                    routerLink="/edit-menu/{{ menu.$key }}"
+                    >Edit</span
+                  >
+                  <span
+                    class="btn btn-outline-danger btn-sm"
+                    (click)="deletemenu(menu)"
+                    >Delete</span
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+      </div>
+    </section>

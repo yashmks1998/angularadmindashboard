@@ -1,0 +1,244 @@
+<main id="main" class="main">
+    <div class="pagetitle">
+        <h1>Restaurants</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+                <li class="breadcrumb-item active">Restaurants</li>
+            </ol>
+        </nav>
+    </div>
+    <section class="section dashboard">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-xxl-4 col-md-6">
+                        <div class="card info-card sales-card">
+                            <div class="filter">
+                                <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                                    <li class="dropdown-header text-start">
+                                        <h6>Filter</h6>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Today</a></li>
+                                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Sales <span>| Today</span></h5>
+                                <div class="d-flex align-items-center">
+                                    <div
+                                        class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-cart"></i></div>
+                                    <div class="ps-3">
+                                        <h6>145</h6>
+                                        <span class="text-success small pt-1 fw-bold">12%</span> <span
+                                            class="text-muted small pt-2 ps-1">increase</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-md-6">
+                        <div class="card info-card revenue-card">
+                            <div class="filter">
+                                <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                                    <li class="dropdown-header text-start">
+                                        <h6>Filter</h6>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Today</a></li>
+                                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Revenue <span>| This Month</span></h5>
+                                <div class="d-flex align-items-center">
+                                    <div
+                                        class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-currency-dollar"></i></div>
+                                    <div class="ps-3">
+                                        <h6>$3,264</h6>
+                                        <span class="text-success small pt-1 fw-bold">8%</span> <span
+                                            class="text-muted small pt-2 ps-1">increase</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-12">
+                        <div class="card info-card customers-card">
+                            <div class="filter">
+                                <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                                    <li class="dropdown-header text-start">
+                                        <h6>Filter</h6>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Today</a></li>
+                                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Customers <span>| This Year</span></h5>
+                                <div class="d-flex align-items-center">
+                                    <div
+                                        class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-people"></i></div>
+                                    <div class="ps-3">
+                                        <h6>1244</h6>
+                                        <span class="text-danger small pt-1 fw-bold">12%</span> <span
+                                            class="text-muted small pt-2 ps-1">decrease</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="col-xl-12">
+                        <div class="card recent-sales overflow-auto">
+                            <div class="filter">
+                                <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                                    <li class="dropdown-header text-start">
+                                        <h6>Filter</h6>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Today</a></li>
+                                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Recent Sales <span>| Today</span></h5>
+                                <table class="table table-borderless datatable">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Customer</th>
+                                            <th scope="col">Product</th>
+                                            <th scope="col">Price</th>
+                                            <th scope="col">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"><a href="#">#2457</a></th>
+                                            <td>Brandon Jacob</td>
+                                            <td><a href="#" class="text-primary">At praesentium minu</a></td>
+                                            <td>$64</td>
+                                            <td><span class="badge bg-success">Approved</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">#2147</a></th>
+                                            <td>Bridie Kessler</td>
+                                            <td><a href="#" class="text-primary">Blanditiis dolor omnis similique</a>
+                                            </td>
+                                            <td>$47</td>
+                                            <td><span class="badge bg-warning">Pending</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">#2049</a></th>
+                                            <td>Ashleigh Langosh</td>
+                                            <td><a href="#" class="text-primary">At recusandae consectetur</a></td>
+                                            <td>$147</td>
+                                            <td><span class="badge bg-success">Approved</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">#2644</a></th>
+                                            <td>Angus Grady</td>
+                                            <td><a href="#" class="text-primar">Ut voluptatem id earum et</a></td>
+                                            <td>$67</td>
+                                            <td><span class="badge bg-danger">Rejected</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><a href="#">#2644</a></th>
+                                            <td>Raheem Lehner</td>
+                                            <td><a href="#" class="text-primary">Sunt similique distinctio</a></td>
+                                            <td>$165</td>
+                                            <td><span class="badge bg-success">Approved</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="row row-cols-3 g-4">
+                      <div class="col">
+                        <div class="card">
+                          <img src="https://s7d2.scene7.com/is/image/ritzcarlton/RCBAHRA_00249_tile" class="card-img-top" alt="Hollywood Sign on The Hill">
+                          <div class="card-body">
+                            <h5 class="card-title">Restaurant 1</h5>
+                            <p class="card-text">
+                              This is a longer card with supporting text below as a natural lead-in to
+                              additional content. This content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <img src="https://d4t7t8y8xqo0t.cloudfront.net/resized/750X436/eazytrendz%2F2872%2Ftrend20200704125831.jpg" class="card-img-top" alt="Palm Springs Road">
+                          <div class="card-body">
+                            <h5 class="card-title">Restaurant 2</h5>
+                            <p class="card-text">
+                              This is a longer card with supporting text below as a natural lead-in to
+                              additional content. This content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <img src="https://d4t7t8y8xqo0t.cloudfront.net/app/eazymedia/restaurant%2F110025%2Frestaurant020160519143002.jpg" class="card-img-top" alt="Los Angeles Skyscrapers">
+                          <div class="card-body">
+                            <h5 class="card-title">Restaurant 3</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                              additional content. This content is a little bit longer.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2022/04/11165342/Untitled-design-2022-04-11T165320.988.jpg" class="card-img-top" alt="Skyscrapers">
+                          <div class="card-body">
+                            <h5 class="card-title">Restaurant 4</h5>
+                            <p class="card-text">
+                              This is a longer card with supporting text below as a natural lead-in to
+                              additional content. This content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <img src="https://c.ndtvimg.com/2020-10/p0n323j_delhi-restaurants-generic-650-_625x300_08_October_20.jpg?im=FeatureCrop,algorithm=dnn,width=620,height=350" class="card-img-top" alt="Skyscrapers">
+                          <div class="card-body">
+                            <h5 class="card-title">Restaurant 5</h5>
+                            <p class="card-text">
+                              This is a longer card with supporting text below as a natural lead-in to
+                              additional content. This content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <img src="https://d4t7t8y8xqo0t.cloudfront.net/resized/750X436/eazytrendz%2F2975%2Ftrend20201030124515.jpg" class="card-img-top" alt="Skyscrapers">
+                          <div class="card-body">
+                            <h5 class="card-title">Restaurant 6</h5>
+                            <p class="card-text">
+                              This is a longer card with supporting text below as a natural lead-in to
+                              additional content. This content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+</main>
